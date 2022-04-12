@@ -50,7 +50,7 @@ h6 {
 }
 
 .olexe-bgblue {
-  background: rgb(8, 40, 82);
+    background: rgb(8, 40, 82);
 }
 
 .olexe-bglightblue {
@@ -89,26 +89,30 @@ ul.fa-ul.fa-ul-font-styling li > i {
   margin-right: 2px;
 }
 
-/* test */
+
+/* test */ 
 
 .olexe-fa-align {
-  display: inline-block;
-  vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .olexe-fa-align p {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 5px;
-  padding-top: 20px;
+    display: inline-block;
+    vertical-align: middle; 
+    margin-left: 5px;
+    padding-top: 20px;
 }
 .olexe-fa-align i {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle; 
+    margin-left: 5px;
 }
 
+
 /* Panel/containers - Help with spacing */
+
+/* panel */
 
 .olexe-panel {
   margin-top: 16px;
@@ -123,25 +127,13 @@ p {
 .olexe-paddingpanel {
   padding: 10px;
 }
+
+/* container */
+
 .olexe-container {
   padding: 0.01em 16px;
 }
 
-/* this is not a complete list panel */
-
-.olexe-not-complete-list {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  background: rgb(242, 242, 242);
-}
-.olexe-not-complete-list p:before {
-  font-family: "FontAwesome";
-  content: "\f0a9";
-  color: rgb(0, 83, 161);
-}
-.olexe-not-complete-list p {
-  content: "Please note, this is not a complete list – you may have additional actions.";
-}
 
 /* rounded borders */
 
@@ -155,20 +147,16 @@ p {
 
 /* centering */
 
-/* Cards */
 
-.olexe-card {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+/* Flex center */
+
+.olexe-flex-center {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
 }
 
-.olexe-card2 {
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.olexe-card-modal {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  
-}
+ 
 
 /* borders */
 
@@ -188,65 +176,9 @@ p {
   opacity: 0.6;
 }
 
-/* tables */
 
-.olexe-table,
-.olexe-table-all {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  display: table;
-}
 
-.olexe-table-all {
-  border: 1px solid #ccc;
-}
-
-.olexe-bordered tr,
-.olexe-table-all tr {
-  border-bottom: 1px solid #ddd;
-}
-
-.olexe-striped tbody tr:nth-child(even) {
-  background-color: #f1f1f1;
-}
-
-.olexe-table-all tr:nth-child(odd) {
-  background-color: #fff;
-}
-
-.olexe-table-all tr:nth-child(even) {
-  background-color: #f1f1f1;
-}
-
-/* needs to be fixed */
-
-.olexe-hoverable tbody tr:hover,
-.w3-ul.w3-hoverable li:hover {
-  background-color: #ccc;
-}
-
-.olexe-centered tr th,
-.olexe-centered tr td {
-  text-align: center;
-}
-
-.olexe-table td,
-.olexe-table th,
-.olexe-table-all td,
-.olexe-table-all th {
-  padding: 8px 8px;
-  display: table-cell;
-  text-align: left;
-  vertical-align: top;
-}
-.olexe-table th:first-child,
-.olexe-table td:first-child,
-.olexe-table-all th:first-child,
-.olexe-table-all td:first-child {
-  padding-left: 16px;
-}
-
+/* Layouts (grid and flexbox) */
 /* start of grid */
 
 .olexe-wrapper {
@@ -326,6 +258,8 @@ p {
   background-attachment: fixed;
 }
 
+
+
 /* Animations here */
 
 /* Line hover animations */
@@ -360,7 +294,12 @@ p {
   }
 }
 
+
+
 /* assets */
+
+
+
 
 /* take notes */
 
@@ -375,10 +314,12 @@ p {
   display: table-cell;
   vertical-align: middle;
   padding: 10px;
+
 }
 
 .olexe-takenotespositioning i {
   margin-right: 20px;
+
 }
 
 .olexe-takenotestext {
@@ -388,3 +329,209 @@ p {
   font-size: 0.9rem;
   padding: 5px;
 }
+
+/* FINAL CODE FOR TAKE NOTES: 
+
+<div style="border-radius: 15px;" class="olexe-takenotesstyle">
+    <div class="olexe-takenotespositioning">
+        <i class="far fa-edit fa-3x olexe-pink" aria-hidden="true"></i></div>
+        <p class="olexe-takenotestext">
+            Take notes (300-500 words as a rough guidance) on these questions 
+            as they will help you with your 30% summative assessment 
+            due in week 5.</p>
+</div>
+
+ */
+
+
+
+/* Please note: This is for the 'please note this is a placeholder used for design purposes' panel */
+
+.olexe-pleasenote {
+  background-color: rgb(255, 235, 59);
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.olexe-pleasenote i {
+  color: #0053a1;
+}
+
+/* FINAL CODE: 
+
+<p class="olexe-pleasenote">
+    <i class="fa fa-exclamation-circle " aria-hidden="true"></i>
+    <span>Please note, this is a placeholder video used for design purposes</span>
+</p>
+
+ */
+
+
+/* tables */
+
+.olexe-table,
+.olexe-table-all {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+}
+
+.olexe-table-all {
+  border: 1px solid #ccc;
+}
+
+.olexe-bordered tr,
+.olexe-table-all tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.olexe-striped tbody tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.olexe-table-all tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.olexe-table-all tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+/* needs to be fixed */
+
+.olexe-hoverable tbody tr:hover,
+.w3-ul.w3-hoverable li:hover {
+  background-color: #ccc;
+}
+
+.olexe-centered tr th,
+.olexe-centered tr td {
+  text-align: center;
+}
+
+.olexe-table td,
+.olexe-table th,
+.olexe-table-all td,
+.olexe-table-all th {
+  padding: 8px 8px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: top;
+}
+.olexe-table th:first-child,
+.olexe-table td:first-child,
+.olexe-table-all th:first-child,
+.olexe-table-all td:first-child {
+  padding-left: 16px;
+}
+
+/***************************************
+ Font awesome play icon next to 'watch'. Used above videos */ 
+
+.olexe-fa-play {
+  color: #A30062;
+  padding: 5px;
+  font-size: 1.5em;
+}
+
+.olexe-fa-play-style {
+  font-size: 1.2rem;
+  margin-top: 15px; 
+}
+
+/* FINAL CODE 
+
+<div class="olexe-flex-center olexe-fa-play-style">
+    <i class="fas fa-play olexe-fa-play"></i>
+    <span>Watch</span> 
+</div>
+
+ */
+
+
+
+/* Cards */
+
+.olexe-card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.olexe-card2 {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* this is not a complete list panel */
+
+.olexe-not-complete-list {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background: rgb(242, 242, 242);
+}
+.olexe-not-complete-list p:before {
+  font-family: "FontAwesome";
+  content: "\f0a9";
+  color: rgb(0, 83, 161);
+}
+.olexe-not-complete-list p {
+  content: "Please note, this is not a complete list – you may have additional actions.";
+}
+
+/**************************************/
+/* Video introduction panel (this goes on the bottom of the video to provide an overview of key activities for the week */ 
+
+.olexe-video-overview-style {
+  width: 640px;
+  margin: 0 auto;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+  padding: 0.01em 16px;
+}
+
+.olexe-video-overview-positioning {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px;
+
+}
+
+.olexe-video-overview-positioning i {
+  margin-right: 20px;
+
+}
+
+.olexe-video-overview-text {
+  display: table-cell;
+  vertical-align: middle;
+  word-break: break-word;
+  font-size: 0.9rem;
+  padding: 5px;
+}
+
+/* FINAL CODE 
+
+<div class="olexe-video-overview-style">
+    <div class="olexe-video-overview-positioning">
+        <i class="fas fa-exclamation-circle fa-3x olexe-blue" aria-hidden="true"></i></div>
+        <p class="olexe-video-overview-text">
+            This video will introduce you to the learning objectives of this week, provide you with an  overview over key activities we will do this week, and it will provide a brief overview of a key topic of this week.</p>
+</div> 
+*/
+
+/***********************************
+ You are in week X */ 
+
+.olexe-you-are-in {
+  margin: 30px 0 40px 0;
+
+}
+
+/* FINAL CODE: 
+
+<div class="olexe-you-are-in">
+    <i class="fa fa-location-arrow fa-1x" aria-hidden="true"></i>
+    <span>You're in Week 1: Introduction</span>
+</div> 
+
+*/
