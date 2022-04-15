@@ -50,7 +50,7 @@ h6 {
 }
 
 .olexe-bgblue {
-    background: rgb(8, 40, 82);
+    background: rgb(8, 40, 82);;
 }
 
 .olexe-bglightblue {
@@ -63,7 +63,48 @@ h6 {
 
 /* Headers */
 
-/* next steps header */
+
+/****************************
+* FA ICON Title Header */
+
+
+.olexe-reading-container {
+  padding:0.01em 16px;
+  
+  
+}
+
+.olexe-reading-container h5 {
+  margin-bottom: -5px;
+  margin-top: 15px;
+  opacity: 0.6;
+}
+
+.olexe-fa-header {
+  font-size: 1.2rem;  
+  margin-top: 30px;
+}
+
+.olexe-fa-header i {
+  padding: 25px;
+  margin-left: -20px;
+  margin-right: -10px;
+  vertical-align: middle;
+  line-height: 10px;
+}
+
+.olexe-fa-header span {
+  font-size: 1.2rem;  
+  margin-top: 30px;
+}
+
+/*****Header for two lines next to font awesome icon******************/ 
+
+
+
+
+/******************************
+* next steps header */
 
 .olexe-header-next-steps h2 {
   border-bottom: 2px solid rgb(172, 208, 239);
@@ -78,6 +119,12 @@ h6 {
   margin-right: 10px;
 }
 
+.olexe-next-steps-borderbottom {
+  border-bottom: 3px solid #acd0ef;
+  width: 60%;
+  margin: 0 auto;
+}
+
 /* fa font styling */
 
 ul.fa-ul.fa-ul-font-styling li {
@@ -90,9 +137,13 @@ ul.fa-ul.fa-ul-font-styling li > i {
 }
 
 
-/* test */ 
+/* test 
 
-.olexe-fa-align {
+This is a test for aligning the header with two sentences. There is currently an issue with verticually alginging the font awesome icon with the text without using numeral padding. 
+
+*/ 
+
+.olexe-fa-align{
     display: inline-block;
     vertical-align: middle;
 }
@@ -101,7 +152,7 @@ ul.fa-ul.fa-ul-font-styling li > i {
     display: inline-block;
     vertical-align: middle; 
     margin-left: 5px;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 .olexe-fa-align i {
     display: inline-block;
@@ -147,6 +198,13 @@ p {
 
 /* centering */
 
+.olexe-transform-center {
+  position: relative; 
+  display: inline-block; 
+  padding-left: 1em; 
+  left: 50%; 
+  transform: translateX(-50%)
+}
 
 /* Flex center */
 
@@ -161,9 +219,7 @@ p {
 /* borders */
 
 .olexe-borderbottom {
-  border-bottom: 3px solid #acd0ef;
-  width: 60%;
-  margin: 0 auto;
+  border-bottom:1px solid #ccc
 }
 
 .olexe-border {
@@ -178,7 +234,8 @@ p {
 
 
 
-/* Layouts (grid and flexbox) */
+/******************************************
+ Layouts (grid and flexbox) */
 /* start of grid */
 
 .olexe-wrapper {
@@ -275,7 +332,8 @@ p {
   }
 }
 
-/* page animation from the left (transition) */
+/***********************************
+ page animation from the left (transition) */
 
 .olexe-animate-left {
   float: left;
@@ -370,8 +428,7 @@ p {
 
 /* tables */
 
-.olexe-table,
-.olexe-table-all {
+.olexe-table, .olexe-table-all {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
@@ -382,22 +439,22 @@ p {
   border: 1px solid #ccc;
 }
 
-.olexe-bordered tr,
-.olexe-table-all tr {
+.olexe-bordered tr, .olexe-table-all tr {
   border-bottom: 1px solid #ddd;
 }
 
-.olexe-striped tbody tr:nth-child(even) {
+.olexe-striped tbody tr:nth-child(odd) {
   background-color: #f1f1f1;
 }
 
-.olexe-table-all tr:nth-child(odd) {
+.olexe-table-all tr:nth-child(even) {
   background-color: #fff;
 }
 
 .olexe-table-all tr:nth-child(even) {
   background-color: #f1f1f1;
 }
+
 
 /* needs to be fixed */
 
@@ -426,6 +483,15 @@ p {
 .olexe-table-all td:first-child {
   padding-left: 16px;
 }
+
+
+/* FINAL code
+
+This is what you need to put in the class to have a table that looks like the ones used in Sustainable Finance Overview 
+
+<table class="olexe-table olexe-striped olexe-border"
+ 
+*/
 
 /***************************************
  Font awesome play icon next to 'watch'. Used above videos */ 
@@ -480,28 +546,30 @@ p {
 }
 
 /**************************************/
-/* Video introduction panel (this goes on the bottom of the video to provide an overview of key activities for the week */ 
+/* Video introduction panel (this goes on the bottom of the video to provide an overview of key activities for the week 
 
-.olexe-video-overview-style {
+This is a white panel with a 3x font awesome imporant icon in exeter blue */ 
+
+.olexe-white-overview-style {
   width: 640px;
   margin: 0 auto;
   box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
   padding: 0.01em 16px;
 }
 
-.olexe-video-overview-positioning {
+.olexe-white-overview-positioning {
   display: table-cell;
   vertical-align: middle;
   padding: 10px;
 
 }
 
-.olexe-video-overview-positioning i {
+.olexe-white-overview-positioning i {
   margin-right: 20px;
 
 }
 
-.olexe-video-overview-text {
+.olexe-white-overview-text {
   display: table-cell;
   vertical-align: middle;
   word-break: break-word;
@@ -535,3 +603,50 @@ p {
 </div> 
 
 */
+
+
+/********************************** 
+Reading panel asset  */
+
+/* Containers for readings */
+
+.olexe-reading-subheader {
+  padding:0.01em 16px;
+  
+  
+}
+
+.olexe-reading-subheader h5 {
+  margin-bottom: -5px;
+  margin-top: 15px;
+  opacity: 0.6;
+}
+
+.olexe-readings {
+  display: inline-block; 
+  font-size: 1.0rem;  
+  border-radius: 10px;
+  padding: 15px;
+  padding-left: 3px;
+}
+
+.olexe-reading-panel ol *:not(:first-child) {
+  margin-top: 7px;
+  
+}
+
+.olexe-reading-panel ol {
+  padding-top: 15px
+}
+
+.olexe-reading-panel {
+  margin-top:16px; 
+  margin-bottom:16px;
+  background: rgb(242, 242, 242);
+  border:1px solid #ccc;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 0 3 0 0 ;
+
+
+}
