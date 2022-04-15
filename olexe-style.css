@@ -20,6 +20,12 @@ h6 {
 
 /* styles  */
 
+/* fonts */ 
+
+.olexe-tiny {
+  font-size: 0.7rem;
+}
+
 /* Colors */
 
 .olexe-pink {
@@ -64,6 +70,40 @@ h6 {
 /* Headers */
 
 
+/* Top padding and title used in overview the header will be large while the subheader will be anything stored in an ordered/unordered list, p and span afterwards. */
+
+.olexe-header {
+  font-size: 1.2rem; 
+  padding-top: 25px;
+
+}
+
+/* p/ol/ul/span settings */ 
+
+.olexe-header ol{
+  margin-bottom: 25px;
+  font-size: 1rem;
+
+}
+
+.olexe-header ul{
+  margin-bottom: 25px;
+  font-size: 1rem;
+
+}
+
+.olexe-header p{
+  margin-bottom: 25px;
+  font-size: 1rem;
+
+}
+
+.olexe-header span{
+  margin-bottom: 25px;
+  font-size: 1rem;
+
+}
+
 /****************************
 * FA ICON Title Header */
 
@@ -97,10 +137,6 @@ h6 {
   font-size: 1.2rem;  
   margin-top: 30px;
 }
-
-/*****Header for two lines next to font awesome icon******************/ 
-
-
 
 
 /******************************
@@ -139,6 +175,8 @@ ul.fa-ul.fa-ul-font-styling li > i {
 
 /* test 
 
+/*****Header for two lines next to font awesome icon******************
+
 This is a test for aligning the header with two sentences. There is currently an issue with verticually alginging the font awesome icon with the text without using numeral padding. 
 
 */ 
@@ -148,11 +186,13 @@ This is a test for aligning the header with two sentences. There is currently an
     vertical-align: middle;
 }
 
+/*****************/ 
 .olexe-fa-align p {
     display: inline-block;
     vertical-align: middle; 
     margin-left: 5px;
     padding-top: 20px;
+
 }
 .olexe-fa-align i {
     display: inline-block;
@@ -586,6 +626,80 @@ This is a white panel with a 3x font awesome imporant icon in exeter blue */
             This video will introduce you to the learning objectives of this week, provide you with an  overview over key activities we will do this week, and it will provide a brief overview of a key topic of this week.</p>
 </div> 
 */
+
+
+/********************************
+Suggested days panel: Used in the overview where it says 'these suggested days are just a rough guidance.' 
+*********************/
+/* 
+.tablestyle {
+  background-color: rgb(242, 242, 242);
+  border-radius: 20px;
+  padding: 1rem;
+  width: 75%;
+}
+
+.table {
+  display: table-row;
+}
+
+
+.table td i:first-child{
+  vertical-align: middle;
+  margin-right: 15px;
+} 
+
+/* FINAL CODE 
+
+    <table class="tablestyle">
+        <td>
+            <i class="fas fa-3x fa-fw fa-exclamation-circle"></i>
+        </td>
+        <td>
+            <span>The suggested days are just a rough guidance. You may do these activities at your own individual pace throughout this week. However, please try to complete all activities this week as you will only receive feedback on activities submitted by the end of this week. It also ensures that you can engage with your fellow students on the same activities and they can benefit from your contribution, too.</span>
+            <p class="olexe-tiny">
+                * = Compulsory submission deadline
+            </p>
+        </td>
+    </table>
+
+*/ 
+/* 
+*THIS IS THE SAME PANEL USING A TABLE TO CREATE IT. THIS IS NO LONGER IN USE. PLEASE USE THE FLEXBOX METHOD BELOW/ */
+
+/*********FLEX Attempt 3*******/
+
+.olexe-guidance-flex {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  padding: 1rem;
+  background-color: rgb(242, 242, 242);
+  border-radius: 20px;
+  align-items: center;
+}
+
+.olexe-flexFA {
+  margin-right: 15px;
+  color: rgb(0, 83, 161);
+}
+
+/* FINAL CODE: 
+
+
+<div class="olexe-guidance-flex">
+    <div class="olexe-flexFA">
+        <i class="fas fa-3x fa-fw fa-exclamation-circle"></i>
+    </div>
+    <div>
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, minus provident amet hic aut a! Est, sapiente quae? Explicabo et ab quo ipsum, iusto facere earum nihil officia neque! Laudantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ex alias veritatis necessitatibus, quod repellat?
+        </span>
+        <p class="olexe-tiny">
+            * = Compulsory submission deadline
+        </p>
+    </div>
+</div> */
+
 
 /***********************************
  You are in week X */ 
