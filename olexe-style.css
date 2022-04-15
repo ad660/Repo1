@@ -152,7 +152,7 @@ This is a test for aligning the header with two sentences. There is currently an
     display: inline-block;
     vertical-align: middle; 
     margin-left: 5px;
-    padding-top: -20px;
+    padding-top: 20px;
 }
 .olexe-fa-align i {
     display: inline-block;
