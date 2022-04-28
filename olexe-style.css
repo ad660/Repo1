@@ -745,11 +745,20 @@ Reading panel asset  */
 }
 
 .olexe-reading-panel ol *:not(:first-child) {
-  margin-top: 7px;
+  margin-top: 10px;
   
 }
 
 .olexe-reading-panel ol {
+  padding-top: 15px
+}
+
+.olexe-reading-panel ul *:not(:first-child) {
+  margin-top: 10px;
+  
+}
+
+.olexe-reading-panel ul {
   padding-top: 15px
 }
 
