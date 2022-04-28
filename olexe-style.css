@@ -20,10 +20,18 @@ h6 {
 
 /* styles  */
 
-/* fonts */ 
+/* font sizes */ 
 
 .olexe-tiny {
   font-size: 0.7rem;
+}
+
+.olexe-small {
+  font-size: 0.8rem;
+}
+
+.olexe-medium {
+  font-size: 1rem;
 }
 
 /* Colors */
@@ -198,10 +206,26 @@ This is a test for aligning the header with two sentences. There is currently an
     display: inline-block;
     vertical-align: middle; 
     margin-left: 5px;
+    margin-right: 5px;
 }
 
+/*
+ FINAL CODE FOR TWO LINES
 
-/* Panel/containers - Help with spacing */
+
+<div class="olexe-borderbottom">
+    <div class="olexe-fa-align">
+        <i class="fa fa-fw fa-3x fa-bar-chart"></i>
+        <p><b>Activities and Assignments</b>
+            <br>Below is a list of the major activities for this week.
+        </p>
+    </div>
+</div>
+
+*/
+
+/****************************
+ Panel/containers - Help with spacing */
 
 /* panel */
 
@@ -484,17 +508,22 @@ p {
 }
 
 .olexe-striped tbody tr:nth-child(odd) {
-  background-color: #f1f1f1;
+  background-color: rgb(255, 255, 255);
+}
+
+.olexe-striped tbody tr:nth-child(even) {
+  background-color: rgba(172, 208, 239, 0.6);
 }
 
 .olexe-table-all tr:nth-child(even) {
   background-color: #fff;
 }
 
-.olexe-table-all tr:nth-child(even) {
+.olexe-table-all tr:nth-child(odd) {
   background-color: #f1f1f1;
 }
 
+/* Old color for (even) table is #fff */
 
 /* needs to be fixed */
 
@@ -560,11 +589,11 @@ This is what you need to put in the class to have a table that looks like the on
 
 /* Cards */
 
-.olexe-card {
+.olexe-shadow {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-.olexe-card2 {
+.olexe-shadow2 {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -619,11 +648,11 @@ This is a white panel with a 3x font awesome imporant icon in exeter blue */
 
 /* FINAL CODE 
 
-<div class="olexe-video-overview-style">
-    <div class="olexe-video-overview-positioning">
+<div class="olexe-white-overview-style">
+    <div class="olexe-white-overview-positioning">
         <i class="fas fa-exclamation-circle fa-3x olexe-blue" aria-hidden="true"></i></div>
-        <p class="olexe-video-overview-text">
-            This video will introduce you to the learning objectives of this week, provide you with an  overview over key activities we will do this week, and it will provide a brief overview of a key topic of this week.</p>
+        <p class="olexe-white-overview-text">
+            This video will introduce you to the learning objectives of this week, provide you with an  overview of key activities we will do this week, and it will provide a brief overview of a key topic of this week.</p>
 </div> 
 */
 
@@ -674,14 +703,16 @@ Suggested days panel: Used in the overview where it says 'these suggested days a
   flex-direction: row;
   width: 75%;
   padding: 1rem;
-  background-color: rgb(242, 242, 242);
+  background-color: rgb(255, 255, 255);
+  border: 3px solid #082852;
   border-radius: 20px;
-  align-items: center;
+  align-items: center; 
+  justify-content: center;
 }
 
-.olexe-flexFA {
+.olexe-guidance-flex i{ 
   margin-right: 15px;
-  color: rgb(0, 83, 161);
+  color: #082852;
 }
 
 /* FINAL CODE: 
@@ -730,7 +761,7 @@ Reading panel asset  */
   
 }
 
-.olexe-reading-subheader h5 {
+.olexe-reading-subheader h6 {
   margin-bottom: -5px;
   margin-top: 15px;
   opacity: 0.6;
